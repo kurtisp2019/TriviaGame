@@ -1,0 +1,67 @@
+/*
+
+    This is the style.css file
+
+*/
+
+html {
+    height: 100%;
+    
+  }
+  
+body {
+    
+   
+    background-image: url("../images/bg.gif");
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 100vh;
+    background-position: center; /* Center the image */
+    background-repeat: repeat; /* Do not repeat the image */
+    background-size: 100%; /* Resize the background image to cover the entire */
+    
+}
+
+h1 {
+    color: blue;
+    font-size: 115px;
+    padding-top: 3vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#allDone {
+    color: green;
+    padding-top:150px;
+     font-size: 80px
+}
+#mainContent {
+
+    width: 1200px;
+    height: 800px;
+    margin: 100px auto 100px auto;
+    background-color: beige;
+    text-align: center;
+ }
+ #q1 {
+     margin-top: 80px;
+ }
+.questions {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+    color: green;
+
+}
+.radioBtns {
+    font-size: 20px;
+}
+.radioBtn {
+    margin: 0px 10px 0px 10px;
+}
+#startBtn {
+
+    width: 400px;
+    height: 120px;
+    background-color: pink;
+    border: 5px solid blue;
+    margin: 15% auto 0 auto;
+    font-size: 50px;
+    
+}
