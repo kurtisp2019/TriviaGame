@@ -38,7 +38,7 @@ class Game {
     // fields
     m_szGameQuestions = [];
     m_nCurTime = 0;
-    m_nStartTime = 10;
+    m_nStartTime = 30;
     m_bIsRunning = false;
     m_nRandomQIndex = [4];
     m_nNumCorrect = 0;
@@ -96,10 +96,6 @@ class Game {
 
             // find the total that were right or wrong 
             _game.checkUserAnswers();
-
-            alert("correct: " + _game.m_nNumCorrect);
-            alert("wrong: " + _game.m_nNumWrong);
-            alert("unanswered: " + _game.m_nNumUnanswered);
 
             // display the total page
             location.href = "total.html?numCorrect=" + _game.m_nNumCorrect 
