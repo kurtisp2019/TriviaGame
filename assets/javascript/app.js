@@ -191,7 +191,7 @@ class Game {
         /////////////////////////////////////////////////////////////////
         for (var i = 0; i < hGame.m_szGameQuestions[hGame.m_nRandomQIndex[3]].m_szAnswers.length; ++i) {
 
-            var temp = ".q3" + i.toString() ;
+            var temp = ".q4" + i.toString() ;
 
             if (hGame.m_szGameQuestions[hGame.m_nRandomQIndex[3]].m_szAnswers[i].m_bIsTrue === true) {
                 if ($(temp).is(':checked')) {
