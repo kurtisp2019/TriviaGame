@@ -102,7 +102,9 @@ class Game {
             alert("unanswered: " + _game.m_nNumUnanswered);
 
             // display the total page
-            location.href = "total.html";
+            location.href = "total.html?numCorrect=" + _game.m_nNumCorrect 
+                + "&numIncorrect=" + _game.m_nNumWrong
+                + "&numUnanswered=" + _game.m_nNumUnanswered;
 
             // save the values
             // localStorage.setItem("right", 7);
@@ -127,7 +129,7 @@ class Game {
         // check if the correct answer matches the users selection
         for (var i = 0; i < hGame.m_szGameQuestions[hGame.m_nRandomQIndex[0]].m_szAnswers.length; ++i) {
 
-            var temp = "[name= q1" + i.toString() + "]";
+            var temp = ".q1" + i.toString() ;
 
             if (hGame.m_szGameQuestions[hGame.m_nRandomQIndex[0]].m_szAnswers[i].m_bIsTrue === true) {
                 if ($(temp).is(':checked')) {
@@ -149,7 +151,7 @@ class Game {
         /////////////////////////////////////////////////////////////////
         for (var i = 0; i < hGame.m_szGameQuestions[hGame.m_nRandomQIndex[1]].m_szAnswers.length; ++i) {
 
-            var temp = "[name= q2" + i.toString() + "]";
+            var temp = ".q2" + i.toString() ;
 
             if (hGame.m_szGameQuestions[hGame.m_nRandomQIndex[1]].m_szAnswers[i].m_bIsTrue === true) {
                 if ($(temp).is(':checked')) {
@@ -171,7 +173,7 @@ class Game {
         /////////////////////////////////////////////////////////////////
         for (var i = 0; i < hGame.m_szGameQuestions[hGame.m_nRandomQIndex[2]].m_szAnswers.length; ++i) {
 
-            var temp = "[name= q3" + i.toString() + "]";
+            var temp = ".q3" + i.toString() ;
 
             if (hGame.m_szGameQuestions[hGame.m_nRandomQIndex[2]].m_szAnswers[i].m_bIsTrue === true) {
                 if ($(temp).is(':checked')) {
@@ -193,7 +195,7 @@ class Game {
         /////////////////////////////////////////////////////////////////
         for (var i = 0; i < hGame.m_szGameQuestions[hGame.m_nRandomQIndex[3]].m_szAnswers.length; ++i) {
 
-            var temp = "[name= q4" + i.toString() + "]";
+            var temp = ".q3" + i.toString() ;
 
             if (hGame.m_szGameQuestions[hGame.m_nRandomQIndex[3]].m_szAnswers[i].m_bIsTrue === true) {
                 if ($(temp).is(':checked')) {
